@@ -1,11 +1,8 @@
 export default class ExceptionUtils {
   FormatException = (error) => {
-    const {response} = error || {
-      response: {
-        data: 'Ocorreu um erro',
-      },
-    };
-
-    return response.data;
+    const {response} = error;
+    const respErr = response || { data: error }
+ 
+    return respErr.data;
   };
 }
