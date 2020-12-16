@@ -1,0 +1,1 @@
+Tests under Ryzentosh VM and phisical Mac Mini
